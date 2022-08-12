@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+body {
+  margin: 0;
+  background: white;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav{
+    width: 100vw;
+    height: 76px;
+    font-size: 19.2px;
+    color: #454e56;
+    background-color: white;
+    line-height: normal;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    transition: all .9s ease;
+}
+
+.nav:hover{
+    box-shadow: 10px 10px 10px gray;
+}
+
+
+.nav-center-elements{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.nav-center-elements>p{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.nav-right-elements{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    font-size: 32px;
+    
+}
+
+.nav-logo{
+    font-size: 48px;
+    cursor: pointer;
+    transition: all .9s ease;
+}
+.nav-logo:hover{
+    transform: rotate(360deg);
+    color: red;
+    font-size: 60px;
+}
+
+.nav-item{
+    cursor: pointer;
+    transition: all .9s ease;
+}
+.nav-item:hover{
+    color: orange;
+    text-shadow: 10px 10px 50px gray;
+}
+
+
+.intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-top: 60px;
+    padding: 64px 95px 64px 95px;
+    width: 1127px;
+    height: 429px;
+
+}
+.landing-page-text{
+    width: 499px;
+    height: 429px;
+    padding: 0 32px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.landing-page-text>h2{
+    font-size: 40px;
+    transition: all .9s ease;
+}
+.landing-page-text>h2:hover{
+    text-shadow: 0px 10px 29px gray;
+}
+.video-element{
+    width: calc(1920px/3.5);
+    height: calc(1080px/3.5);
+    background: url(./assets/featured.jpg);
+    border-radius: 10px;
+    border: 15px solid white;
+    transition: all .5s ease-in-out;
+}
+.video-element:hover{
+    box-shadow: 0px 15px 50px gray;
+}
+
+.red-code:hover{
+    background: rgb(228, 92, 92);
+    color: white;
+}
+
+.cta{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+.btn{
+    width: 85px;
+    height: 17px;
+    padding: 12px 25px;
+    margin: 3px;
+    text-align: center;
+    font-size: 12.5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+.btn-green{
+    border: 1px solid #09c372;
+    display: block;
+    background: linear-gradient(to right,#09c372 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;  
+}
+.btn-green:hover, .btn-red:hover{
+    color: white;
+    background-position: left bottom;
+}
+.btn-red{
+    border: 1px solid #fa8142;
+    display: block;
+    background: linear-gradient(to right,#fa8142 50%,transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+
+.courses{
+    text-align: center;
+}
+img{
+    width: calc(1920px/3.5);
+    height: calc(1080px/3.5);
+}
+.courses>.heading{
+    grid-column: span 2;
+}
+
+.courses>p{
+    grid-column: span 2;
+}
+
+.course-cards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    place-items: center;
+    gap: 50px;
+
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 550px;
+    min-height: 500px;
+    height: auto;
+    background: white;
+    /* border-radius: 10px; */
+    padding: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+.card:hover{
+    box-shadow: 0px 15px 50px gray;
+    transform: translateY(-15px);
+}
+
+
+.card>.btn{
+    width: auto;
+}
